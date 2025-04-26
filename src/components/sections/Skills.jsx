@@ -14,8 +14,10 @@ import {
   faJava,
   faGithub,
   faMicrosoft,
+  faAndroid,
+  faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faCloud, faWind, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faCloud, faWind, faCode, faPaperPlane, faMobile, faFire } from "@fortawesome/free-solid-svg-icons";
 
 export const Skills = () => {
   const frontendSkills = [
@@ -37,12 +39,16 @@ export const Skills = () => {
     { name: "MySQL", icon: faDatabase },
     { name: "SQLite", icon: faDatabase },
     { name: "Oracle", icon: faDatabase },
+    { name: "Postman", icon: faPaperPlane },
     { name: "GitHub", icon: faGithub },
+    { name: "Firebase", icon: faFire },
   ];
 
   const otherSkills = [
     { name: "C++", icon: faCode },
     { name: "C# (.NET)", icon: faMicrosoft },
+    { name: "Kotlin", icon: faAndroid },
+    { name: "Android", icon: faMobile },
   ];
 
   const containerVariants = {
@@ -118,7 +124,7 @@ export const Skills = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-blue-400">Frontend Development</h3>
+              <h3 className="text-2xl font-bold text-blue-400">Frontend</h3>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-2 gap-6">
               {frontendSkills.map((skill) => (
@@ -160,19 +166,19 @@ export const Skills = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-cyan-400">Backend Development</h3>
+              <h3 className="text-2xl font-bold text-cyan-400">Backend</h3>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-3 gap-4">
               {backendSkills.map((skill) => (
                 <motion.div
                   key={skill.name}
                   whileHover={{ scale: 1.05 }}
-                  className="flex flex-col items-center justify-center p-4 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all duration-300 group"
+                  className="flex flex-col items-center justify-center p-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center mb-3 group-hover:bg-cyan-500/20 transition-all duration-300">
+                  <div className="w-10 h-10 rounded-full bg-cyan-500/10 flex items-center justify-center mb-2 group-hover:bg-cyan-500/20 transition-all duration-300">
                     {renderIcon(skill.icon)}
                   </div>
-                  <span className="text-gray-300 text-sm text-center group-hover:text-white transition-colors">
+                  <span className="text-gray-300 text-xs text-center group-hover:text-white transition-colors">
                     {skill.name}
                   </span>
                 </motion.div>
@@ -202,7 +208,7 @@ export const Skills = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-purple-400">Other Skills</h3>
+              <h3 className="text-2xl font-bold text-purple-400">Other</h3>
             </div>
             <div className="grid grid-cols-2 gap-6">
               {otherSkills.map((skill) => (
