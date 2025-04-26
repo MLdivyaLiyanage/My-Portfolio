@@ -82,7 +82,7 @@ export const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            My Skills
+            Skills
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             Technologies I've worked with
