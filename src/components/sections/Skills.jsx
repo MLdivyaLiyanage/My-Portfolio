@@ -45,7 +45,7 @@ export const Skills = () => {
   ];
 
   const otherSkills = [
-    { name: "C++", icon: faCode },
+    { name: "C", icon: faCode },
     { name: "C# (.NET)", icon: faMicrosoft },
     { name: "Kotlin", icon: faAndroid },
     { name: "Android", icon: faMobile },
