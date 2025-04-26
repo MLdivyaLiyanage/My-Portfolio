@@ -6,6 +6,7 @@ import { Home } from './components/sections/Home';
 import { About } from './components/sections/About';
 import './App.css';
 import './index.css';
+import { Skills } from './components/sections/Skills';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -22,6 +23,7 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Home />
         <About />
+        <Skills />
         </div>
     </>
   );
