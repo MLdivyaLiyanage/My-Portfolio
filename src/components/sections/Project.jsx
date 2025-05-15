@@ -1,7 +1,7 @@
 import { image } from "framer-motion/client";
 import { ExternalLink } from "lucide-react"; 
 // Assuming you're using Lucide icons
-import { Github } from "lucide-react";
+import { Github, ArrowRight } from "lucide-react";
 
 
 
@@ -10,41 +10,25 @@ const projects = [
         id: 1,
         title: "Hostel Management System",
         description: "A web application for managing hostel operations, including room allocation, billing, and maintenance requests.",
-        image: "/projects/project1.webp",
+        image: "/projects/image.png",
         tags: ["HTML", "CSS", "PHP", "MySQL"],
-        githubUrl: "https://youtu.be/v-hL3sks2qI?list=RDv-hL3sks2qI",  
+        githubUrl: "https://github.com/MLdivyaLiyanage/HOSTEL-MANAGEMANT-SYSTEM",  
     },
     {
         id: 2,
-        title: "Hostel Management System",
+        title: "Coffee Shop Management System",
         description: "A web application for managing hostel operations, including room allocation, billing, and maintenance requests.",
-        image: "/projects/project1.webp",
-        tags: ["HTML", "CSS", "PHP", "MySQL"],
-        githubUrl: "#",  
+        image: "/projects/shop.png",
+        tags: ["Kotlin", "Firebase", "Java"],
+        githubUrl: "https://github.com/MLdivyaLiyanage/Coffee_Shop_online",  
     },
     {
         id: 3,
-        title: "Hostel Management System",
+        title: "Computer shop Management System",
         description: "A web application for managing hostel operations, including room allocation, billing, and maintenance requests.",
-        image: "/projects/project1.webp",
-        tags: ["HTML", "CSS", "PHP", "MySQL"],
-        githubUrl: "#",  
-    },
-    {
-        id: 4,
-        title: "Hostel Management System",
-        description: "A web application for managing hostel operations, including room allocation, billing, and maintenance requests.",
-        image: "/projects/project1.webp",
-        tags: ["HTML", "CSS", "PHP", "MySQL"],
-        githubUrl: "#",  
-    },
-    {
-        id: 5,
-        title: "Hostel Management System",
-        description: "A web application for managing hostel operations, including room allocation, billing, and maintenance requests.",
-        image: "/projects/project1.webp",
-        tags: ["HTML", "CSS", "PHP", "MySQL"],
-        githubUrl: "#",  
+        image: "/projects/bushome.PNG",
+        tags: ["HTML", "CSS", "PHP", "PHPMyAdmin", "JavaScript"],
+        githubUrl: "https://github.com/MLdivyaLiyanage/Highway-Bus-Seat-Booking-System-",  
     },
 ]
 
@@ -86,6 +70,14 @@ export const Project = () => {
                                 </div>
                             </div>
                         ))}
+                    </div>
+
+                    <div className="text-center mt-12">
+                        <a className="cosmic-button w-fit flex items-center mx-auto gap-2" 
+                        target="_blank"
+                        href="https://github.com/MLdivyaLiyanage">
+                            Check My Github <ArrowRight size = {16}/>
+                        </a>
                     </div>
         </div>
     </section>
