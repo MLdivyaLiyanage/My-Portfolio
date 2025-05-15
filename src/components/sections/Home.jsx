@@ -46,7 +46,7 @@ export const Home = () => {
                             <div className="relative aspect-square rounded-2xl overflow-hidden border-4 border-gray-800/50 shadow-2xl">
                                 {/* Replace with your professional headshot */}
                                 <img 
-                                    src="src/assets\profile.png" 
+                                    src="src/assets\profile.jpg" 
                                     alt="Divya - Professional Profile"
                                     className="w-full h-full object-cover"
                                 />
